@@ -46,7 +46,11 @@
 			echo $message;
 		}
 
-		$msg = "
+		
+
+	}
+
+	$msg = "
 			<html>
 			<head>
 			<title>Greetings from selingonal.github.io!</title>
@@ -58,11 +62,11 @@
 			<th>Email</th>
 			</tr>
 			<tr>
-			<td>"."<php $name ?> "."</td>
-			<td>"."<php $email ?>". "</td>
+			<td>$name</td>
+			<td> $email</td>
 			</tr>
 			</table>
-			<p>"."<php $message ?> "."</p
+			<p>$message</p
 			</body>
 			</html>
 		";
@@ -70,6 +74,6 @@
 
 		mail("selingonal@gwu.edu", $subject, $msg);
 
+	header("Location: index.html");
 
-	}
 ?>
