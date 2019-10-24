@@ -74,6 +74,6 @@
 
 		mail("selingonal@gwu.edu", $subject, $msg);
 
-	header("https://selingonal.github.io/#contact");
+	header("Location: index.html");
 
 ?>
